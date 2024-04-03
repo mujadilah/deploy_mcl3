@@ -1,5 +1,4 @@
 FROM tensorflow/serving:latest
-
 COPY ./output/serving_model /models/cc-model
 COPY ./config /model_config
 
