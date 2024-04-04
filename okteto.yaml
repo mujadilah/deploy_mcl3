@@ -1,0 +1,4 @@
+name: restref
+deploy:
+  - name: Helm Install
+    command: helm upgrade --install restref chart
