@@ -2,7 +2,7 @@ FROM tensorflow/serving:latest
 COPY ./output/serving_model /models/cc-model
 COPY ./config /model_config
 
-ENV MODEL_NAME=final-mcl3
+ENV MODEL_NAME=cc-model
 ENV MONITORING_CONFIG="/model_config/prometheus.config"
 ENV PORT=8501
 
