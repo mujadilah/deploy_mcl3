@@ -1,0 +1,23 @@
+version: "3"
+
+services:
+  cc-prediction:
+    container_name: ml
+    image: mujadilah/cc-prediction
+    restart: always
+    ports:
+      - rev-rest.up.railway.app
+
+  cc-monitoring:
+    container_name: prometheus
+    image: mujadilah/cc-monitoring
+    restart: always
+    ports:
+      - rev-rest.up.railway.app
+
+  cc-visualization:
+    container_name: grafana
+    image: grafana/grafana
+    restart: always
+    ports:
+      - rev-rest.up.railway.app

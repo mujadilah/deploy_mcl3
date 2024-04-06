@@ -10,4 +10,4 @@ scrape_configs:
     scrape_interval: 5s 
     metrics_path: /monitoring/prometheus/metrics 
     static_configs:
-      - targets: ['103.190.215.192:8501']
+      - targets: ['rev-rest.up.railway.app']
